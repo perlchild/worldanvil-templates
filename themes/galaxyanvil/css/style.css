@@ -1473,7 +1473,6 @@
     color: var(--accent3);
 }
 
-.user-css-presentation .alert-info,
 .user-css-presentation .alert-blue {
     background-color: var(--info5Transparent);
     background: linear-gradient(to right, var(--info5Transparent), var(--info5), var(--info5Transparent));
@@ -1482,7 +1481,6 @@
     box-shadow: 0 0 2px 2px var(--info9);
 }
 
-.user-css-presentation .alert-info h5:first-of-type,
 .user-css-presentation .alert-blue h5:first-of-type {
     color: var(--info3);
 }
@@ -1515,7 +1513,6 @@
     color: var(--warning3);
 }
 
-.user-css-presentation .alert-danger,
 .user-css-presentation .alert-red {
     background-color: var(--danger5Transparent);
     background: linear-gradient(to right, var(--danger5Transparent), var(--danger5), var(--danger5Transparent));
@@ -1524,7 +1521,6 @@
     box-shadow: 0 0 2px 2px var(--danger9);
 }
 
-.user-css-presentation .alert-danger h5:first-of-type,
 .user-css-presentation .alert-red h5:first-of-type {
     color: var(--danger3);
 }
