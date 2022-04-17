@@ -399,6 +399,9 @@
     padding: 20px;
     line-height: 1.5em;
     margin: 10px;
+    -webkit-transform: skew(5deg);
+    -moz-transform: skew(5deg);
+    -o-transform: skew(5deg);
 }
 
 .user-css-presentation blockquote .author {
@@ -406,9 +409,6 @@
     font-size: 1.4rem;
     padding-right: 10px;
     color: #8F8F8F;
-    -webkit-transform: skew(5deg);
-    -moz-transform: skew(5deg);
-    -o-transform: skew(5deg);
 }
 
 .user-css-presentation code,
