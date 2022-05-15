@@ -4,10 +4,10 @@
  * https://github.com/perlchild/worldanvil-templates/tree/rahjar/arndsts
  */
 
-/* Color Theme: Default (WA public) */
+/* Color Theme: Custom, based on WA Default */
 .user-css-presentation {
-    /* Default Color: Yellow-Green (Hue 65) */
-    --default1: #1D1E0F;
+    /* Default Color: HTML Emerald  standard */
+    --default1: #50c878;
     --default2: #2F3020;
     --default3: #414233;
     --default4: #505142;
@@ -359,7 +359,7 @@
 }
 
 @font-face {
-    font-family: Raleway, SansSerif;
+    font-family: Raleway, Serif;
     font-style: normal;
     font-weight: 300;
     src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
@@ -415,7 +415,7 @@
     font-family: inherit;
     font-size: 1.4rem;
     padding-right: 10px;
-    color: #8F8F8F;
+   /* color: #8F8F8F;*/
 }
 
 .user-css-presentation code,
@@ -1487,11 +1487,11 @@
 
 /* ALERTS */
 .user-css-presentation .alert-default {
-    background-color: var(--default5Transparent);
+    background-color: silver;
     background: linear-gradient(to right, var(--default5Transparent), var(--default5), var(--default5Transparent));
-    border-color: var(--default9);
-    color: var(--defaultDMuted);
-    box-shadow: 0 0 2px 2px var(--default9);
+    border-color: #D0D0D0;
+    color: black;
+    box-shadow: 0 0 2px 2px #50c878;
 }
 
 .user-css-presentation .alert-default h5:first-of-type {
@@ -1511,24 +1511,31 @@
 }
 
 .user-css-presentation .alert-secondary {
-    background-color: var(--accent5Transparent);
+    background-color: #50c878;
     background: linear-gradient(to right, var(--accent5Transparent), var(--accent5), var(--accent5Transparent));
-    border-color: var(--accent9);
+    border-color: #C0C0C0;
     color: var(--accentDMuted);
-    box-shadow: 0 0 2px 2px var(--accent9);
+    box-shadow: 0 0 2px 2px #000000;
 }
 
 .user-css-presentation .alert-secondary h5:first-of-type {
     color: var(--accent3);
 }
 
-.user-css-presentation .alert-info,
-.user-css-presentation .alert-blue {
+.user-css-presentation .alert-info {
     background-color: var(--info5Transparent);
     background: linear-gradient(to right, var(--info5Transparent), var(--info5), var(--info5Transparent));
     border-color: var(--info9);
     color: var(--infoDMuted);
     box-shadow: 0 0 2px 2px var(--info9);
+}
+
+.user-css-presentation .alert-blue {
+    background-color: var(--info1Transparent);
+    background: linear-gradient(to right, var(--info1Transparent), var(--info1), var(--info1Transparent));
+    border-color: var(--info5);
+    color: var(--infoDMuted);
+    box-shadow: 0 0 2px 2px var(--info5);
 }
 
 .user-css-presentation .alert-info h5:first-of-type,
@@ -1550,10 +1557,16 @@
     color: var(--success3);
 }
 
-.user-css-presentation .alert-warning,
+.user-css-presentation .alert-warning {
+    background-color: var(--warning1Transparent);
+    background: linear-gradient(to right, var(--warning5Transparent), var(--warning5), var(--warning5Transparent));
+    border-color: var(--warning9);
+    color: var(--warningDMuted);
+    box-shadow: 0 0 2px 2px var(--warning9);
+}
 .user-css-presentation .alert-yellow {
     background-color: var(--warning5Transparent);
-    background: linear-gradient(to right, var(--warning5Transparent), var(--warning5), var(--warning5Transparent));
+    background: linear-gradient(to right, var(--warning5Transparent), var(--warning6), var(--warning6Transparent));
     border-color: var(--warning9);
     color: var(--warningDMuted);
     box-shadow: 0 0 2px 2px var(--warning9);
@@ -1563,11 +1576,17 @@
 .user-css-presentation .alert-yellow h5:first-of-type {
     color: var(--warning3);
 }
-
-.user-css-presentation .alert-danger,
 .user-css-presentation .alert-red {
-    background-color: var(--danger5Transparent);
-    background: linear-gradient(to right, var(--danger5Transparent), var(--danger5), var(--danger5Transparent));
+    background-color: var(--danger1Transparent);
+    background: linear-gradient(to right, var(--danger5Transparent), var(--danger6), var(--danger6Transparent));
+    border-color: var(--danger9);
+    color: var(--dangerAMuted);
+    box-shadow: 0 0 2px 2px var(--danger9);
+}
+
+.user-css-presentation .alert-danger {
+    background-color: var(--danger1Transparent);
+    background: linear-gradient(to right, var(--danger5Transparent), var(--danger6), var(--danger6Transparent));
     border-color: var(--danger9);
     color: var(--dangerDMuted);
     box-shadow: 0 0 2px 2px var(--danger9);
