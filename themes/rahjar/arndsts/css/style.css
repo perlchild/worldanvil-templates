@@ -1499,11 +1499,10 @@
 }
 
 .user-css-presentation .alert-primary {
-    background-color: var(--primary5Transparent);
-    background: linear-gradient(to right, var(--primary5Transparent), var(--primary5), var(--primary5Transparent));
-    border-color: var(--primary9);
-    color: var(--primaryDMuted);
-    box-shadow: 0 0 2px 2px var(--primary9);
+    background-color: #000000;
+    border-color: #c0c0c0;
+    color: #50c878;
+    box-shadow: 0 0 2px 2px #000000;
 }
 
 .user-css-presentation .alert-primary h5:first-of-type {
@@ -1513,7 +1512,7 @@
 .user-css-presentation .alert-secondary {
     background-color: #50c878;
     background: linear-gradient(to right, var(--accent5Transparent), var(--accent5), var(--accent5Transparent));
-    border-color: #C0C0C0;
+    border-color: #c0c0c0;
     color: var(--accentDMuted);
     box-shadow: 0 0 2px 2px #000000;
 }
@@ -1543,7 +1542,13 @@
     color: var(--info3);
 }
 
-.user-css-presentation .alert-success,
+.user-css-presentation .alert-success {
+    background-color: #000000;
+    border-color: var(--success9);
+    color: var(--successDMuted);
+    box-shadow: 0 0 2px 2px var(--success9);
+}
+
 .user-css-presentation .alert-green {
     background-color: var(--success5Transparent);
     background: linear-gradient(to right, var(--success5Transparent), var(--success5), var(--success5Transparent));
