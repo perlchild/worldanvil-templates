@@ -415,7 +415,7 @@
     font-family: inherit;
     font-size: 1.4rem;
     padding-right: 10px;
-   /* color: #8F8F8F;*/
+    /* color: #8F8F8F;*/
 }
 
 .user-css-presentation code,
@@ -1569,6 +1569,7 @@
     color: var(--warningDMuted);
     box-shadow: 0 0 2px 2px var(--warning9);
 }
+
 .user-css-presentation .alert-yellow {
     background-color: var(--warning5Transparent);
     background: linear-gradient(to right, var(--warning5Transparent), var(--warning6), var(--warning6Transparent));
@@ -1581,6 +1582,7 @@
 .user-css-presentation .alert-yellow h5:first-of-type {
     color: var(--warning3);
 }
+
 .user-css-presentation .alert-red {
     background-color: var(--danger1Transparent);
     background: linear-gradient(to right, var(--danger5Transparent), var(--danger6), var(--danger6Transparent));
@@ -2686,4 +2688,40 @@
 .user-css-presentation #display-calendar-presentation.panel .table-hover tr td:hover {
     background: var(--primary8Transparent);
     color: var(--primaryDMuted);
+}
+
+.user-css .sw-marquee marquee {
+    height: 400px;
+}
+
+
+.user-css .sw-marquee {
+    font-family: roboto;
+    background: black;
+    color: #00A800;
+    font-size: 60px;
+    line-height: 1.2em;
+    perspective: 100px;
+}
+
+
+.user-css .sw-text {
+    transform-origin: 50% 100%;
+    transform: rotateX(20deg);
+}
+
+
+.user-css .sw-text h2 {
+    border: none;
+}
+
+.user-css .sw-text h2,
+.user-css .sw-text h3 {
+    font-family: roboto;
+    font-size: 72px;
+    text-align: center;
+}
+
+.user-css .sw-text h2 {
+    font-size: 50px;
 }
