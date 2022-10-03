@@ -1,41 +1,41 @@
 /*
- * GalaxyAnvil - A theme for WorldAnvil, created by SierraKomodo
- * Version 1.5.0
- * https://github.com/SierraKomodo/worldanvil-templates/tree/GalaxyAnvil
+ * The Masked World - A theme for WorldAnvil, modified from GalaxyAnvil by SierraKomodo, for use in The Masked World, one of my worlds on worldanvil
+ * Version 2.0.0
+ * https://github.com/perlchild/worldanvil-templates/tree/rahjar/themaskedworld
  */
 
-/* Color Theme: Default (WA public) */
+/* Color Theme: Custom, based on WA Default */
 .user-css-presentation {
-    /* Default Color: Yellow-Green (Hue 65) */
-    --default1: #1D1E0F;
-    --default2: #2F3020;
-    --default3: #414233;
-    --default4: #505142;
-    --default5: #626354;
-    --default6: #747566;
-    --default7: #838476;
-    --default8: #959687;
-    --default9: #A7A899;
-    --defaultA: #B6B7A8;
-    --defaultB: #C8C9BB;
-    --defaultC: #DADBCB;
-    --defaultD: #E9EADC;
-    --defaultE: #FBFCED;
+    /* Default Color: HTML Emerald  standard */
+    --default1: rgba(34, 177, 171, 0.74);
+    --default2: rgba(45, 177, 177, 0.85);
+    --default3: rgba(29, 30, 15, 0);
+    --default4: rgba(29, 30, 15, 0);
+    --default5: rgba(29, 30, 15, 0);
+    --default6: rgba(29, 30, 15, 0);
+    --default7: rgba(29, 30, 15, 0);
+    --default8: rgba(29, 30, 15, 0);
+    --default9: rgba(29, 30, 15, 0);
+    --defaultA: rgba(29, 30, 15, 0);
+    --defaultB: rgba(29, 30, 15, 0);
+    --defaultC: rgba(29, 30, 15, 0);
+    --defaultD: rgba(29, 30, 15, 0);
+    --defaultE: rgba(29, 30, 15, 0);
 
-    --default1Muted: #1D1E0F;
-    --default2Muted: #2F3020;
-    --default3Muted: #414233;
-    --default4Muted: #505142;
-    --default5Muted: #626354;
-    --default6Muted: #747566;
-    --default7Muted: #838476;
-    --default8Muted: #959687;
-    --default9Muted: #A7A899;
-    --defaultAMuted: #B6B7A8;
-    --defaultBMuted: #C8C9BB;
-    --defaultCMuted: #DADBCB;
-    --defaultDMuted: #E9EADC;
-    --defaultEMuted: #FBFCED;
+    --default1Muted: rgba(29, 30, 15, 0.5);
+    --default2Muted: rgba(29, 30, 15, 0.5);
+    --default3Muted: rgba(29, 30, 15, 0.5);
+    --default4Muted: rgba(29, 30, 15, 0.5);
+    --default5Muted: rgba(29, 30, 15, 0.5);
+    --default6Muted: rgba(29, 30, 15, 0.5);
+    --default7Muted: rgba(29, 30, 15, 0.5);
+    --default8Muted: rgba(29, 30, 15, 0.5);
+    --default9Muted: rgba(29, 30, 15, 0.5);
+    --defaultAMuted: rgba(29, 30, 15, 0.5);
+    --defaultBMuted: rgba(29, 30, 15, 0.5);
+    --defaultCMuted: rgba(29, 30, 15, 0.5);
+    --defaultDMuted: rgba(29, 30, 15, 0.5);
+    --defaultEMuted: rgba(29, 30, 15, 0.5);
 
     --default1Transparent: rgba(29, 30, 15, 0.5);
     --default2Transparent: rgba(47, 48, 32, 0.5);
@@ -52,54 +52,54 @@
     --defaultDTransparent: rgba(233, 234, 220, 0.5);
     --defaultETransparent: rgba(251, 252, 237, 0.5);
 
-    /* Primary Color: Red-Orange (Hue 10, Sat 100) */
-    --primary1: #1C0500;
-    --primary2: #2D0800;
-    --primary3: #3F0700;
-    --primary4: #4F0900;
-    --primary5: #601300;
-    --primary6: #720D00;
-    --primary7: #821100;
-    --primary8: #931100;
-    --primary9: #A51300;
-    --primaryA: #B52100;
-    --primaryB: #C61A00;
-    --primaryC: #D82700;
-    --primaryD: #E52200;
-    --primaryE: #F91D00;
+    /* Primary Color: Red-Orange (Hue 10, Sat 100), with the blue and red inverted */
+    --primary1: rgba(34, 177, 171, 0.74)
+    --primary2: #002D08;
+    --primary3: #003F07;
+    --primary4: #004F09;
+    --primary5: #006013;
+    --primary6: #00720D;
+    --primary7: #008211;
+    --primary8: #009311;
+    --primary9: #00A513;
+    --primaryA: #00B521;
+    --primaryB: #00C61A;
+    --primaryC: #00D827;
+    --primaryD: #00E522;
+    --primaryE: #00F91D;
 
-    --primary1Muted: #1E120F;
-    --primary2Muted: #302320;
-    --primary3Muted: #423533;
-    --primary4Muted: #514442;
-    --primary5Muted: #635754;
-    --primary6Muted: #756866;
-    --primary7Muted: #847876;
-    --primary8Muted: #968987;
-    --primary9Muted: #A89B99;
-    --primaryAMuted: #B7ABA8;
-    --primaryBMuted: #C9BDBB;
-    --primaryCMuted: #DBCECB;
-    --primaryDMuted: #E8DEDC;
-    --primaryEMuted: #FCEFED;
+    --primary1Muted: #0F1E12;
+    --primary2Muted: #203023;
+    --primary3Muted: #334235;
+    --primary4Muted: #425144;
+    --primary5Muted: #546357;
+    --primary6Muted: #667568;
+    --primary7Muted: #768478;
+    --primary8Muted: #879689;
+    --primary9Muted: #99A89B;
+    --primaryAMuted: #A8B7AB;
+    --primaryBMuted: #BBC9BD;
+    --primaryCMuted: #CBDBCE;
+    --primaryDMuted: #DCE8DE;
+    --primaryEMuted: #EDFCEF;
 
-    --primary1Transparent: rgba(28, 5, 0, 0.5);
-    --primary2Transparent: rgba(45, 8, 0, 0.5);
-    --primary3Transparent: rgba(63, 7, 0, 0.5);
-    --primary4Transparent: rgba(79, 9, 0, 0.5);
-    --primary5Transparent: rgba(96, 19, 0, 0.5);
-    --primary6Transparent: rgba(114, 13, 0, 0.5);
-    --primary7Transparent: rgba(130, 17, 0, 0.5);
-    --primary8Transparent: rgba(147, 17, 0, 0.5);
-    --primary9Transparent: rgba(165, 19, 0, 0.5);
-    --primaryATransparent: rgba(181, 33, 0, 0.5);
-    --primaryBTransparent: rgba(198, 26, 0, 0.5);
-    --primaryCTransparent: rgba(219, 39, 0, 0.5);
-    --primaryDTransparent: rgba(229, 34, 0, 0.5);
-    --primaryETransparent: rgba(249, 29, 0, 0.5);
+    --primary1Transparent: rgba(0, 28, 5, 0.5);
+    --primary2Transparent: rgba(0, 45, 8, 0.5);
+    --primary3Transparent: rgba(0, 63, 7, 0.5);
+    --primary4Transparent: rgba(0, 79, 9, 0.5);
+    --primary5Transparent: rgba(0, 96, 19, 0.5);
+    --primary6Transparent: rgba(0, 114, 13, 0.5);
+    --primary7Transparent: rgba(0, 130, 17, 0.5);
+    --primary8Transparent: rgba(0, 147, 17, 0.5);
+    --primary9Transparent: rgba(0, 165, 19, 0.5);
+    --primaryATransparent: rgba(0, 181, 33, 0.5);
+    --primaryBTransparent: rgba(0, 198, 26, 0.5);
+    --primaryCTransparent: rgba(0, 219, 39, 0.5);
+    --primaryDTransparent: rgba(0, 229, 34, 0.5);
+    --primaryETransparent: rgba(0, 249, 29, 0.5);
 
     /* Accent Color: Teal (Hue 186) */
-    --accent1: #0F1D1E;
+    --accent1: rgba(34, 177, 171, 0.74)
     --accent2: #202F30;
     --accent3: #334142;
     --accent4: #425051;
@@ -145,11 +145,11 @@
     --accentETransparent: rgba(237, 251, 252, 0.5);
 
     /* Specialty Colors */
-    --midPrimaryAccentA: #AF6C5C; /* Used for h3 */
-    --midPrimaryAccent8: #8D534B; /* Used for h3 small */
-    --midDefaultAccentA: #AFB7B0; /* Used for h5 */
-    --midDefaultAccent8: #9FA69F; /* Used for h5 small */
-    --defaultAFullTransparent: rgba(182, 183, 168, 0); /* Used for row border groups */
+    --midPrimaryAccentA: #5CAF6C; /* Used for h3 */
+    --midPrimaryAccent8: #4B8D53; /* Used for h3 small */
+    --midDefaultAccentA: #B0AFB7; /* Used for h5 */
+    --midDefaultAccent8: #9F9FA6; /* Used for h5 small */
+    --defaultAFullTransparent: rgba(168, 182, 183, 0); /* Used for row border groups */
 
     /* Global Bootstrap Colors */
     /* Danger (Red) */
@@ -358,6 +358,13 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@font-face {
+    font-family: Raleway, Serif;
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+}
+
 /* LAYOUT - MAIN */
 .user-css-presentation {
     font-size: 1.6rem;
@@ -368,7 +375,7 @@
     background: none;
     border: none;
     border-radius: var(--borderRadius);
-    font-family: IBM Plex Sans Condensed, sans-serif;
+    font-family: Raleway, sans-serif;
     margin-bottom: 3rem;
     margin-top: 0;
     padding-bottom: 2rem;
@@ -399,12 +406,16 @@
     padding: 20px;
     line-height: 1.5em;
     margin: 10px;
+    -webkit-transform: skew(5deg);
+    -moz-transform: skew(5deg);
+    -o-transform: skew(5deg);
 }
 
 .user-css-presentation blockquote .author {
     font-family: inherit;
     font-size: 1.4rem;
     padding-right: 10px;
+    /* color: #8F8F8F;*/
 }
 
 .user-css-presentation code,
@@ -443,8 +454,9 @@
     font-family: Mina, serif;
     font-size: 2.4rem;
     font-weight: 500;
-    margin-bottom: 5px;
-    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
 }
 
 .user-css-presentation h4,
@@ -566,7 +578,7 @@
 }
 
 .user-css-presentation .nav-pills li {
-    border:none;
+    border: none;
     border-radius: var(--borderRadius);
     font-family: inherit;
     font-size: inherit;
@@ -1257,13 +1269,12 @@
 .user-css-presentation .row-border-group .user-row:only-child .col-md-3:first-child:before,
 .user-css-presentation .row-border-group .user-row:only-child .col-md-3:last-child:before,
 .user-css-presentation .row-border-group .user-row:only-child .col-md-4:first-child:before,
-.user-css-presentation .row-border-group .user-row:only-child .col-md-4:last-child:before
-{
+.user-css-presentation .row-border-group .user-row:only-child .col-md-4:last-child:before {
     display: none;
 }
 
 .user-css-presentation .donut-chart {
-    display: flex!important;
+    display: flex !important;
     height: 110px;
     margin: 5px;
     padding: 5px;
@@ -1476,11 +1487,11 @@
 
 /* ALERTS */
 .user-css-presentation .alert-default {
-    background-color: var(--default5Transparent);
+    background-color: silver;
     background: linear-gradient(to right, var(--default5Transparent), var(--default5), var(--default5Transparent));
-    border-color: var(--default9);
-    color: var(--defaultDMuted);
-    box-shadow: 0 0 2px 2px var(--default9);
+    border-color: #D0D0D0;
+    color: black;
+    box-shadow: 0 0 2px 2px #50c878;
 }
 
 .user-css-presentation .alert-default h5:first-of-type {
@@ -1488,11 +1499,10 @@
 }
 
 .user-css-presentation .alert-primary {
-    background-color: var(--primary5Transparent);
-    background: linear-gradient(to right, var(--primary5Transparent), var(--primary5), var(--primary5Transparent));
-    border-color: var(--primary9);
-    color: var(--primaryDMuted);
-    box-shadow: 0 0 2px 2px var(--primary9);
+    background-color: #000000;
+    border-color: #c0c0c0;
+    color: #50c878;
+    box-shadow: 0 0 2px 2px #000000;
 }
 
 .user-css-presentation .alert-primary h5:first-of-type {
@@ -1500,19 +1510,18 @@
 }
 
 .user-css-presentation .alert-secondary {
-    background-color: var(--accent5Transparent);
+    background-color: #50c878;
     background: linear-gradient(to right, var(--accent5Transparent), var(--accent5), var(--accent5Transparent));
-    border-color: var(--accent9);
+    border-color: #c0c0c0;
     color: var(--accentDMuted);
-    box-shadow: 0 0 2px 2px var(--accent9);
+    box-shadow: 0 0 2px 2px #000000;
 }
 
 .user-css-presentation .alert-secondary h5:first-of-type {
     color: var(--accent3);
 }
 
-.user-css-presentation .alert-info,
-.user-css-presentation .alert-blue {
+.user-css-presentation .alert-info {
     background-color: var(--info5Transparent);
     background: linear-gradient(to right, var(--info5Transparent), var(--info5), var(--info5Transparent));
     border-color: var(--info9);
@@ -1520,12 +1529,26 @@
     box-shadow: 0 0 2px 2px var(--info9);
 }
 
+.user-css-presentation .alert-blue {
+    background-color: var(--info1Transparent);
+    background: linear-gradient(to right, var(--info1Transparent), var(--info1), var(--info1Transparent));
+    border-color: var(--info5);
+    color: var(--infoDMuted);
+    box-shadow: 0 0 2px 2px var(--info5);
+}
+
 .user-css-presentation .alert-info h5:first-of-type,
 .user-css-presentation .alert-blue h5:first-of-type {
     color: var(--info3);
 }
 
-.user-css-presentation .alert-success,
+.user-css-presentation .alert-success {
+    background-color: #000000;
+    border-color: var(--success9);
+    color: var(--successDMuted);
+    box-shadow: 0 0 2px 2px var(--success9);
+}
+
 .user-css-presentation .alert-green {
     background-color: var(--success5Transparent);
     background: linear-gradient(to right, var(--success5Transparent), var(--success5), var(--success5Transparent));
@@ -1539,10 +1562,17 @@
     color: var(--success3);
 }
 
-.user-css-presentation .alert-warning,
+.user-css-presentation .alert-warning {
+    background-color: var(--warning1Transparent);
+    background: linear-gradient(to right, var(--warning5Transparent), var(--warning5), var(--warning5Transparent));
+    border-color: var(--warning9);
+    color: var(--warningDMuted);
+    box-shadow: 0 0 2px 2px var(--warning9);
+}
+
 .user-css-presentation .alert-yellow {
     background-color: var(--warning5Transparent);
-    background: linear-gradient(to right, var(--warning5Transparent), var(--warning5), var(--warning5Transparent));
+    background: linear-gradient(to right, var(--warning5Transparent), var(--warning6), var(--warning6Transparent));
     border-color: var(--warning9);
     color: var(--warningDMuted);
     box-shadow: 0 0 2px 2px var(--warning9);
@@ -1553,10 +1583,17 @@
     color: var(--warning3);
 }
 
-.user-css-presentation .alert-danger,
 .user-css-presentation .alert-red {
-    background-color: var(--danger5Transparent);
-    background: linear-gradient(to right, var(--danger5Transparent), var(--danger5), var(--danger5Transparent));
+    background-color: var(--danger1Transparent);
+    background: linear-gradient(to right, var(--danger5Transparent), var(--danger6), var(--danger6Transparent));
+    border-color: var(--danger9);
+    color: var(--dangerAMuted);
+    box-shadow: 0 0 2px 2px var(--danger9);
+}
+
+.user-css-presentation .alert-danger {
+    background-color: var(--danger1Transparent);
+    background: linear-gradient(to right, var(--danger5Transparent), var(--danger6), var(--danger6Transparent));
     border-color: var(--danger9);
     color: var(--dangerDMuted);
     box-shadow: 0 0 2px 2px var(--danger9);
@@ -1734,7 +1771,7 @@
 
 .user-css-presentation .donut {
     box-shadow: 0px 0px 5px 2px var(--primary2Transparent),
-                inset 0px 0px 2px 2px var(--primary2Transparent);
+    inset 0px 0px 2px 2px var(--primary2Transparent);
 }
 
 .user-css-presentation .donut:before {
@@ -2651,4 +2688,40 @@
 .user-css-presentation #display-calendar-presentation.panel .table-hover tr td:hover {
     background: var(--primary8Transparent);
     color: var(--primaryDMuted);
+}
+
+.user-css .sw-marquee marquee {
+    height: 400px;
+}
+
+
+.user-css .sw-marquee {
+    font-family: roboto;
+    background: black;
+    color: #00A800;
+    font-size: 60px;
+    line-height: 1.2em;
+    perspective: 100px;
+}
+
+
+.user-css .sw-text {
+    transform-origin: 50% 100%;
+    transform: rotateX(20deg);
+}
+
+
+.user-css .sw-text h2 {
+    border: none;
+}
+
+.user-css .sw-text h2,
+.user-css .sw-text h3 {
+    font-family: roboto;
+    font-size: 72px;
+    text-align: center;
+}
+
+.user-css .sw-text h2 {
+    font-size: 50px;
 }
