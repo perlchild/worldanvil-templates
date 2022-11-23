@@ -153,7 +153,7 @@
     <td class="{{eo}}" title="Spellcasting ability">
         <select class="form-control" id="spell_ability_{{id}}" name="spell_ability_{{id}}">
             <option value="none" {% if spell_ability[:3]|upper == "NON" %}selected="selected" {% endif %} >NONE</option>
-            <option value="intelligence" {% if spell_ability == "INT" %}selected="selected" {% endif %} >INT</option>
+            <option value="intelligence" {% if spell_ability[:3]|upper == "INT" %}selected="selected" {% endif %} >INT</option>
             <option value="wisdom" {% if spell_ability[:3]|upper == "WIS" %}selected="selected" {% endif %} >WIS</option>
             <option value="charisma" {% if spell_ability[:3]|upper == "CHA" %}selected="selected" {% endif %} >CHA</option>
         </select>
@@ -247,7 +247,9 @@
                         <input class="form-control" type="number" placeholder="eg 8 for 1d8" value="{{ variables.hit_die_4 is defined ? variables.hit_die_4 }}" name="hit_die_4" />
                     </div>      
                 </div>
+               <p class="c dnd5e-sheet-description m-t-10 mt-1">
                 Note: if you want to add a statblocks with details for each class, scroll down to Collections: Class Features.
+               </p>
             </div>  
         </div>
     </div>
@@ -349,7 +351,9 @@
             </div>  
         </div>
         <div class="col-12 col-md-12">
-            <label>Saving Throw Mod through items etc</label>
+            <p class="c dnd5e-sheet-description m-t-10 mt-1">
+            <label>Saving Throw Modifier through items etc ONTOP of the default modifier. Do NOT enter the modifier derived from the attribute here!</label>
+           </p>
         </div>
         <div class="col-12 col-md-4 col-lg-2">
             <div class="form-group">
@@ -396,14 +400,14 @@
                     <div class="col-12 col-md-4">
                         <div class="form-group">
                             <label for="armor_class">AC</label>
-                            <input class="form-control" type="number" value="{{ac}}" name="armor_class" />
+                            <input placeholder="(10)" class="form-control" type="number" value="{{ac}}" name="armor_class" />
                             <p class="dnd5e-sheet-description m-t-10 mt-1">leave empty for no armour</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="form-group">
                             <label for="armor_class_mod">AC MOD</label>
-                            <input class="form-control" type="number" value="{{ variables.armor_class_mod is defined ? variables.armor_class_mod }}" name="armor_class_mod" />
+                            <input placeholder="(+0)" class="form-control" type="number" value="{{ variables.armor_class_mod is defined ? variables.armor_class_mod }}" name="armor_class_mod" />
                             <p class="dnd5e-sheet-description m-t-10 mt-1">modifier through items etc</p>
                         </div>
                     </div>
@@ -416,8 +420,26 @@
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="form-group">
+                            <label for="hit_points">HP (current)</label>
+                            {% set lbl = "Current Hit Points" %}
+                            {% if variables.hit_points_current is defined and variables.hit_points_current > 0 %}
+                            {% else %}
+                                {% if chp == "" or chp > hp %}{% set chp = hp %}{% endif %}
+                                {% if chp != 0 %}{% set lbl = "(" ~ chp ~ ")" %}{% set chp = "" %}{% endif %}
+                            {% endif %}
+                            <input placeholder="{{lbl}}" class="form-control c" type="number" value="{{ chp }}" name="hit_points_current" />
+                            <p class="dnd5e-sheet-description m-t-10 mt-1">leave empty for default</p>
+                        </div>  
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="form-group">
                             <label for="hit_points">HP (max)</label>
-                            <input class="form-control" type="number" value="{{ variables.hit_points is defined ? variables.hit_points }}" name="hit_points" min="0" />
+                            {% set lbl = "Max Hit Points" %}
+                            {% if variables.hit_points is defined and variables.hit_points > 0 %}
+                            {% else %}
+                                {% if hp != 0 %}{% set lbl = "(" ~ hp ~ ")" %}{% set hp = "" %}{% endif %}
+                            {% endif %}
+                            <input placeholder="{{lbl}}" class="form-control c" type="number" value="{{ hp }}" name="hit_points" min="0" />
                             <p class="dnd5e-sheet-description m-t-10 mt-1">leave empty for default</p>
                         </div>  
                     </div>
@@ -493,7 +515,7 @@
             <!-- Skills -->
             <div class="skillslist mainbox">
                 <div class="dnd-sheet-container">
-                    <p class="dnd5e-sheet-description m-t-10 mt-1">Fill in the skill bonus (attribute modifier + proficiency bonus are added automatically)</p>
+                    <p class="dnd5e-sheet-description m-t-10 mt-1">Only fill in skill modifiers from feats or items, attribute modifier + proficiency bonus are added automatically</p>
                     <table width="100%">
                         <tr>
                             <td class="pb">
@@ -1127,6 +1149,23 @@
             <!-- Equipment -->
             <div class="dnd-sheet-container">
                 <div class="form-group">
+                    <label for="copper_pieces">Copper</label>
+                    <input class="form-control in-sm" type="number" value="{{ variables.copper_pieces ?? 0 }}" name="copper_pieces" />
+                    <label for="silver_pieces">Silver</label>
+                    <input class="form-control in-sm" type="number" value="{{ variables.silver_pieces ?? 0 }}" name="silver_pieces" />
+                    <label for="electrum_pieces">Electrum</label>
+                    <input class="form-control in-sm" type="number" value="{{ variables.electrum_pieces ?? 0 }}" name="electrum_pieces" />
+                    <label for="gold_pieces">Gold</label>
+                    <input class="form-control in-sm" type="number" value="{{ variables.gold_pieces ?? 0 }}" name="gold_pieces" />
+                    <label for="platinum_pieces">Platinum</label>
+                    <input class="form-control in-sm" type="number" value="{{ variables.platinum_pieces ?? 0 }}" name="platinum_pieces" />
+                </div>                      
+            </div>
+        </div>
+        <div class="col-12 col-sm-12">
+            <!-- Equipment -->
+            <div class="dnd-sheet-container">
+                <div class="form-group">
                     <label for="equipment">Equipment</label>
                     <textarea name="equipment" class="form-control mention" rows="3">{{ variables.equipment is defined ? variables.equipment }}</textarea>
                 </div>                      
@@ -1349,7 +1388,10 @@
     <hr>
     <div class="row footer-row" id="dnd5e-footer">
         <div class="col-12 col-md-12">
-            <h3>Fields for optional features/rules. Ignore this section if you play using the default DND5E rules.</h3>
+            <h3>Fields for optional features/rules.</h3>
+            <p class="c dnd5e-sheet-description m-t-10 mt-1">
+               Everything in this section is optional. If you play by default 5e rules, scroll down to the Spellbook (if your classes have any spells).
+            </p>
         </div>
         <div class="col-12 col-md-6">
             <div class="form-group">
@@ -1442,8 +1484,8 @@
                             {% if variables is defined and variables != '' %}
                                 {{ sheet.spell( id,
                                 attribute(variables, "spell_level_" ~ id)|default(''),
-                                attribute(variables, "spell_name_" ~ id|default('')),
-                                attribute(variables, "spell_id_" ~ id|default('')),
+                                attribute(variables, "spell_name_" ~ id)|default(''),
+                                attribute(variables, "spell_id_" ~ id)|default(''),
                                 attribute(variables, "spell_ability_" ~ id)|default(''),
                                 attribute(variables, "spell_prepared_" ~ id)|default(''),
                                 attribute(variables, "spell_casting_time_" ~ id)|default(''),
@@ -1456,7 +1498,7 @@
                                 attribute(variables, "spell_component_sets_" ~ id)|default(''),
                                 attribute(variables, "spell_notes_" ~ id)|default('')
                             ) }}
-                            {% endif %}
+                            {% else %} {{ sheet.spell( id, "", "", "", "", "", "", "", "", "", "", "", "", "", "" ) }} {% endif %}
                             {% endfor %}
                         </table>
                     </div>                  
@@ -1469,7 +1511,6 @@
     Values that are stored and tracked but not visible on the sheet. 
     These are mostly used for the tracking sheet which tracks temporary changes on the character during the session.
 -->
-<input type="hidden" value="{{ chp }}" name="hit_points_current" />
 <input type="hidden" value="{{ variables.temporary_hit_points is defined ? variables.temporary_hit_points }}" name="temporary_hit_points" />
 <input type="hidden" value="{{ variables.temporary_hit_points_current is defined ? variables.temporary_hit_points_current }}" name="temporary_hit_points_current" />
 <input type="hidden" value="{{ variables.hit_dice_remaining is defined ? variables.hit_dice_remaining }}" name="hit_dice_remaining" />
