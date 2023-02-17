@@ -1166,11 +1166,11 @@
     margin-top: 15px
 }
 
-.user-css-presentation {
+/*.user-css-presentation {
     background-color: black;
     background-image: url(https://www.worldanvil.com/themes/galaxyanvil/images/background.jpg);
     background-attachment: fixed
-}
+}*/
 
 .user-css-presentation .user-css.page::after {
     content: url(https://www.worldanvil.com/themes/galaxyanvil/images/empty.gif);
@@ -1187,11 +1187,13 @@
     width: 100%
 }
 
+/*
 .user-css-presentation .page {
     background-color: var(--default3Transparent);
     color: var(--defaultDMuted);
     box-shadow: 0 0 11px 2px var(--default3Transparent)
 }
+*/
 
 .user-css-presentation .worldmenu-inner {
     background-color: var(--accent3Transparent) !important;
